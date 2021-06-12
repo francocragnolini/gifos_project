@@ -135,7 +135,7 @@ const requestTerms = async (apikey) => {
 const getTerms = async () => {
     const termsContainer = document.querySelector('.main-section .description');
     const terms = await requestTerms(API_KEY);
-    const shortTerms = [...terms.data].slice(0, 8);
+    const shortTerms = [...terms.data].slice(0, 6);
     shortTerms.forEach(term => {
         renderTrendSuggestions(term, termsContainer);
     })
