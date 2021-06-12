@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Gifos</title>
+    <script src="https://kit.fontawesome.com/22873f5917.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./src/styles/css/app.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="./index.html"><img class="logo" src="./src/assets/logo-mobile.svg" alt="home logo"></a>
+        <div class="burger">
+            <span class="burger-icon"></span>
+        </div>
+        <ul class="menu">
+            <li class="item"><span class=" dark-btn link">Modo nocturno</span></li>
+            <li class="item"><a class="link" href="./favourites.html">Favoritos</a></li>
+            <li class="item"><a class="link" href="./mygifos.html">Mis <span class="uppercase">Gifos</span></a></li>
+            <li class="item">
+                <a class="link" href="./creategifos.html">
+                    <img class="create-gif" src="./src/assets/button-crear-gifo.svg" alt="create gif">
+                    <img class="create-hover" src="./src/assets/CTA-crear-gifo-hover.svg" alt="create gif">
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section class="create-gif-sec">
+            <div class="creategif-ctn">
+                
+                <div class="create-gif-desc">
+                    <h2><span class="break-title">Aquí podrás</span>crear tus propios <span class="uppercase color">gifos</span></h2>
+                    <p>¡Crea tu propio <span class="uppercase">gifo</span> en sólo tres pasos! <span class="break-title">(sólo necesitas una cámara para crear un video)</span></p>
+                </div>
+                <div class="cam-acces-desc">
+                    <h2><span class="break-title">¿Nos das acceso</span>a tu cámara?</h2>
+                    <p><span class="break-title">El acceso a tu cámara será valido</span> solo por el tiempo en el que estés creando el <span class="uppercase">gifo.</span></p>
+                </div>
+                <div class="video-ctn">
+                    <video src="#"></video>
+                </div>
+                <div class="corner top-left"></div>
+                <div class="corner top-right"></div>
+                <div class="corner botton-left"></div>
+                <div class="corner botton-right"></div>
+            </div>
+
+            <div class="pages">
+                <span class="page step1 active" data-id="1">1</span>
+                <span class="page step2" data-id="2">2</span>
+                <span class="page step3" data-id="3">3</span>
+                <div class="time-recording">
+                    <div class="cronometer">00:00:0<span class="timer">5</span></div>
+                    <span class="repeat uppercase">repetir captura</span>
+                </div>
+            </div>
+            <div class="line"></div>
+            <button class="more-btn" id="start">Comenzar</button>
+            <button class="more-btn" id="record">Grabar</button>
+            <button class="more-btn" id="end">Finalizar</button>
+            <button class="more-btn" id="upload">Subir gifo</button>
+            <div class="camara">
+                <img id="camera-img" src="./src/assets/camara.svg" alt="camara">
+                <img id="light-img" src="./src/assets/element-luz-camara.svg" alt="">
+            </div>
+            <div class="movie">
+                <img id="movie-img" src="./src/assets/pelicula.svg" alt="movie">
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="social-media">
+            <p class="share">Compartir en:</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <p class="rights">© GIFOS 2020 All Rights Reserved.</p>
+        <div class="purple-bg"></div>
+    </footer>
+    <!-- END-FOOTER -->
+    <script src="./src/scripts/navbar.js"></script>
+    <script src="./src/scripts/create-gif.js"></script>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script src="./src/scripts/darkmode.js"></script>
+</body>
+</html>

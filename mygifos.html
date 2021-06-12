@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Gifos</title>
+    <script src="https://kit.fontawesome.com/22873f5917.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./src/styles/css/app.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="./index.html"><img class="logo" src="./src/assets/logo-mobile.svg" alt="home logo"></a>
+        <div class="burger">
+            <span class="burger-icon"></span>
+        </div>
+        <ul class="menu">
+            <li class="item"><span class=" dark-btn link">Modo nocturno</span></li>
+            <li class="item"><a class="link" href="./favourites.html">Favoritos</a></li>
+            <li class="item"><a class="link" href="./mygifos.html">Mis <span class="uppercase">Gifos</span></a></li>
+            <li class="item">
+                <a class="link" href="./creategifos.html">
+                    <img class="create-gif" src="./src/assets/button-crear-gifo.svg" alt="create gif">
+                    <img class="create-hover" src="./src/assets/CTA-crear-gifo-hover.svg" alt="create gif">
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section class="mygifos-sec">
+            <img class="smile-emoji" src="./src/assets/icon-mis-gifos.svg" alt="icon Mis Gifos">
+            <h2 class="mygif-title">Mis <span class="uppercase">gifos</span></h2>
+            <div class="empty-mygifos">
+                <img class="sad-emoji" src="./src/assets/icon-mis-gifos-sin-contenido.svg" alt="sad emoji">
+                <p class="description">¡Anímate a crear tu primer <span>GIFO</span>!</p>
+            </div>
+            <div class="mygifos-result">
+                <div class="mygifos-gallery"></div>
+                <button class="more-btn">Ver más</button>
+            </div>
+        </section>
+    </main>
+    <section class="trending-section">
+        <h2 class="trending-title">Trending <span class="uppercase">gifos</span></h2>
+        <p class="trending-desc">
+            <span class="break-title">Mira los últimos</span>
+            <span class="uppercase">gifos</span> de nuestra comunidad.
+        </p>
+    
+        <div class="trending-ctn">
+            <div class="arrow prev-btn" id="trending-btn-previous">
+                <button class=" trend-arrow left-btn">&lt;</button>
+            </div>
+            <!-- here trending gifos are rendered -->
+            <div class="trending-slider" id="trending-slider"></div>
+    
+            <div class="arrow next-btn" id="trending-btn-next">
+                <button class=" trend-arrow right-btn">&gt;</button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="social-media">
+            <p class="share">Compartir en:</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <p class="rights">© GIFOS 2020 All Rights Reserved.</p>
+        <div class="purple-bg"></div>
+    </footer>
+    <script src="./src/scripts/functions.js"></script>
+    <script src="./src/scripts/navbar.js"></script>
+    <script src="./src/scripts/trending.js"></script>
+    <script src="./src/scripts/mygifs.js"></script>
+    <script src="./src/scripts/darkmode.js"></script>
+</body>
+</html>
