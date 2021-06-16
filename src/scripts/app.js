@@ -58,6 +58,19 @@ const requestSearchEndpoint = async (apiKey, query,offset) => {
     return data;
 }
 
+// deletes the gifs from a previous search
+const deletePreviosGifs = () => {
+    const len = document.querySelector("#mf-glass");
+    const cross = document.querySelector("#search-cross");
+    const searchResults = document.querySelector(".search-section");
+    const gallery = document.querySelector(".search-gallery");
+    const searchInput = document.querySelector("#search-input");
+    gallery.innerHTML = "";
+    len.style.display = "block";
+    cross.style.display = "none";
+    searchResults.style.display = "none";
+}
+
 const getSearchGifos = async (e) => {
     const searchInput = document.querySelector("#search-input");
     const searchGallery = document.querySelector(" .search-section .search-gallery");
@@ -68,6 +81,9 @@ const getSearchGifos = async (e) => {
     const titleSearch = document.querySelector(".search-section .title-search");
     const listCtn = document.querySelector(".search-ctn .suggestion-ctn");
     listCtn.innerHTML = "";
+    // SEGUNDA CORRECCION 
+    deletePreviosGifs()
+    // SEGUNDA CORRECION 
     const searchedGifos = await requestSearchEndpoint(API_KEY, inputvalue, offset);
     // localStorage 
     const localGifos = JSON.parse(localStorage.getItem('gifos'));
@@ -101,6 +117,7 @@ const searchGlass = () => {
     len.style.display = "none";
     cross.style.display = "block";
 }
+
 const closeSearch = ()=> {
     const len = document.querySelector("#mf-glass");
     const cross = document.querySelector("#search-cross");
